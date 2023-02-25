@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tilt Neon', cursive;
+}
+
+
+
+:root {
+    --bg-font-color: #888;
+    --bg-menu: #42b3e5;
+    --bg-banner1: #42B3E5;;
+    --bg-banner2: #0384CE;;
+    --bg-banner3: #3156A3;;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+nav ul,
+nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--bg-font-color);
+}
+
+
+.active {
+    background-color: var(--bg-menu);
+    border-radius: 10px;
+}
+
+.active:hover {
+    background-color: #fff;
+}
+
+li {
+    border-radius: 5px;
+}
+
+li:hover {
+    transition: all 1s linear;
+    border-radius: 10px;
+    background-color: var(--bg-menu);
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/img1.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+}
+
+.column {
+    flex-direction: column;
+}
+.banner_headline {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.banner_headline h1 {
+    color: #fff;
+    font-size: 70px;
+    text-shadow: 0px 1px 0px #555;
+    max-width: 350px;
+}
+
+.banner_headline h2 {
+    color: #fff;
+    font-size: 21px;
+    text-shadow: 0px 1px 0px #555;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+    margin-top: 30px;
+}
+
+.banner_options {
+    height: 210px;
+    display: flex;
+}
+
+.banner1,
+.banner2,
+.banner3 {
+    flex: 1;
+    padding: 20px;
+
+}
+
+.banner1 {
+    background-color: var(--bg-banner1);
+    color: #fff;
+}
+
+.banner1 h3 {
+    font-size: 24px;
+}
+
+.banner1 p {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.banner1 button {
+    margin-top: 25px;
+    background-color: var(--bg-banner1);
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.banner1 button:hover {
+    background-color: #fff;
+    color: #888;
+}
+
+.banner2 {
+    background-color: var(--bg-banner2);
+    color: #fff;
+}
+
+.banner2 h3 {
+    font-size: 24px;
+}
+
+.banner2 p {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.banner2 button {
+    margin-top: 25px;
+    background-color: var(--bg-banner2);
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.banner2 button:hover {
+    background-color: #fff;
+    color: #888;
+}
+
+.banner3 {
+    background-color: var(--bg-banner3);
+    color: #fff;
+}
+
+.banner3 p {
+    display: inline-block;
+    font-size: 13px;
+    margin-top: 10px;
+    margin: 2px;
+    padding: 12px;
+}
+
+.banner3 .borda {
+    border-bottom: 1px solid  #fff;
+}
+
+#geral {
+    display: flex;
+    justify-content: center;
+}
+
+#geral section {
+    flex: 2;
+}
+
+#geral aside {
+    flex: 1;
+}
+
+.widget_title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.widget_title_text {
+    color: #000;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.wiget_title_bar {
+    width: 50px;
+    height: 2px;
+    background-color: var(--bg-banner1);
+    margin-top: 10px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 25px;
+}
+
+.blocos_aside {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width:350px;
+    justify-content: space-between;
+}
+.bloco {
+    width: 135px;
+    height: 135px;
+    background-color: #0079c7;
+    margin-bottom: 30px;
+}
+.bloco_ {
+    width: 135px;
+    height: 135px;
+    background-color: #0079c7;
+}    
+
+.descricao {
+    padding: 25px;
+    font-size: 13px;
+    color: #666;
+}
+
+.borda2 {
+    border-bottom: 1px solid #666;
+    margin-top: 20px;
+}
+
+.telefone {
+    display: flex;
+    margin-top: 10px;
+}
+
+.telefone p {
+    margin-left: 20px;
+}
+
+.email {
+    display: flex;
+    margin-top: 10px;
+}
+
+.email p {
+    margin-left: 20px;
+}
+
+.email a {
+    text-decoration: none;
+}
+
+.contato {
+    display: flex;
+    margin-top: 10px;
+}
+
+.contato p {
+    margin-left: 20px;
+}
+
+article .news_data {
+    display: flex;
+}
+
+article .news_posted_at {
+    background-color: var(--bg-banner3);
+    color: #fff;
+    font-size: 13px;
+    padding: 10px;
+}
+
+article .news_comments {
+    background-color: var(--bg-banner1);
+    color: #fff;
+    font-size: 13px;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+article .news_thumbnail {
+    margin-top: 30px;
+}
+
+article .news_thumbnail img{
+    width: 100%;
+    height: auto;
+}
+
+article .news_title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #000;
+    font-size: 24px;
+}
+
+article .newsresume {
+    color: #666;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+article a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #202020;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_menu {
+    display: flex;
+}
+
+.fm_1, .fm_2, .fm_3 {
+    flex: 1;
+    color: #fff;
+    padding: 20px;
+}
+
+.fm_1 h1 {
+    font-size: 24px;
+}
+
+.fm1 p {
+    font-size: 13px;
+    color: #fff;
+}
+
+
+
+.fm_2 h1 {
+    font-size: 24px;
+}
+
+.fm2 p {
+    font-size: 13px;
+    color: #fff;
+}
+
+
+.fm_3 h1 {
+    font-size: 24px;
+}
+
+.fm3 p {
+    font-size: 13px;
+    color: #fff;
+}
+
+
+
+.fm_1 {
+    background-color: var(--bg-banner1);
+}
+
+.fm_2 {
+    background-color: var(--bg-banner2);
+}
+
+.fm_3 {
+    background-color: var(--bg-banner3);
+}
+
+.footer_area {
+    display: flex;
+}
+
+.footer_areaitem {
+    color: #fff;
+    flex: 1;
+}
+
+.flexColumn {
+    flex-direction: column;
+}
+
+footer .widget_title_text {
+    color: #fff
+}
+
+.footer_copy {
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    line-height: 40px;
+    color: #909090;
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+
+.footer_contact {
+    padding: 25px;
+    font-size: 14px;
+}
+
+.telefone {
+    padding: 25px;
+    font-size: 14px;
+}
